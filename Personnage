@@ -1,0 +1,26 @@
+package Game;
+
+public class Personnage {
+	
+	private int posX;
+	private int posY;
+	
+	public Personnage(int x, int y){
+		posX = x;
+		posY = y;
+	}
+	
+	public int getposX(){
+		return posX;
+	}
+	
+	public int getposY(){
+		return posY;
+	}
+	
+	public void setpos(int x, int y){
+		posX = posX + x;
+		posY = posY + y;
+	}
+
+}
