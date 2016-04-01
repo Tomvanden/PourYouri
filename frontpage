@@ -1,0 +1,26 @@
+package View;
+
+import javax.swing.JFrame;
+
+public class frontpage extends JFrame {
+	private Boutonstart start = new Boutonstart();
+	private frontpageimage frontpageimage = new frontpageimage();
+	private static final int pagehigh = 900;
+	private static final int pagelength = 1250;
+	
+	public frontpage(){
+		setTitle("projet BA2"); // titre
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // programme se ferme avec la fenêtre
+		setSize(pagelength, pagehigh); // met la taille
+		setLocation(300,50); // met l'emplacement
+		setVisible(true); // affiche la fênetre
+		setResizable(false); // empêche le redimensionnement
+		setAlwaysOnTop(false); // pas d'office en premier plan
+		setLayout(null);
+		
+		setContentPane(frontpageimage); // dire que c'est frontpageimage qui définit le fond
+		frontpageimage.add(start);
+	}
+	
+	
+}
